@@ -27,7 +27,7 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
 - View resident information for verification.
 - View visitor list to validate entry and check visit details.
 
-### Installation 
+## Installation 
 1. Run `git clone "Repository Link"`
 2. Add the following `.jar` files to your project's Reference Library:
    - fontawesomefx.jar
