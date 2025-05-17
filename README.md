@@ -1,2 +1,42 @@
-# Home-Resident-System
-A Java GUI system for managing visitor access and parking in a residential community, with role-based features for residents, admins, and security guards.
+# Home Resident System
+## Overview
+This project is a JavaFX-based GUI application developed using Scene Builder (FXML). It is designed to enhance residential community security and convenience through two core functionalities: **Parking Pre-registration** and **Visitor Management**. The system includes role-based access for residents, security guards, and admin staff, enabling streamlined guest registration and visitor tracking.
+
+## Main Features
+- Visitor Management
+  - Residents can pre-register their guests by entering visitor details.
+  - Admins oversee all visitor entries and logs for security and reporting purposes.
+  - Security guards check the visitor list for verification during entry.
+  - Visitor activity is recorded for tracking and safety compliance.
+- Parking Pre-registration
+  - Residents can reserve parking for the visitor.
+  - Security guards use the parking list to verify visitor access and parking allocation.
+
+## User Panels & Responsibilities
+### Resident Panel 
+- Add a visitor by entering their name and contact number.
+- Remove a visitor from the list when not needed.
+- Schedule a visit by selecting the visitor, date, time, and purpose.
+- Reserve parking by choosing a scheduled visitor, entering car plate number, and setting stay duration.
+
+### Admin Panel
+- View the list of registered residents.
+- View the list of scheduled visitors.
+
+### Security Guard Panel
+- View resident information for verification.
+- View visitor list to validate entry and check visit details.
+
+### Installation 
+1. Run `git clone "Repository Link"`
+2. Add JAR dependencies to your project’s library:
+   - fontawesomefx.jar (Download from: [FontAwesomeFX](https://jar-download.com/artifacts/de.jensd/fontawesomefx/8.2/source-code))
+   - mysql-connector-java.jar (Download from: [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/))
+3. Add JARs to Reference Library in your project
+4. Set up MySQL database connection:
+   - Make sure your MySQL server is running.
+   - Update `AdminPageController.java` with your own: database name, username and password
+5. Run `AdminPageController.java`</br>
+   To login as Resident => ID: `1001` Pass: `may123`</br>
+   To login as Admin => ID: `1001` Pass: `ava123`</br>
+   To login as Security Guard => ID: `1001` Pass: `jack123`
