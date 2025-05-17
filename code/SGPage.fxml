@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SGPageController">
+   <children>
+      <AnchorPane fx:id="mainscreen" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="41.0" prefWidth="1003.0" style="-fx-background-color: #969e49;">
+               <children>
+                  <Button fx:id="signout_btn" alignment="CENTER_RIGHT" layoutX="949.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="30" wrappingWidth="29.85714340209961" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="home_btn" layoutX="9.0" layoutY="3.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="30" text="" wrappingWidth="29.85714340209961" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="parkingList_btn" alignment="CENTER" contentDisplay="TOP" layoutX="548.0" layoutY="250.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="150.0" prefWidth="230.0" text="Parking List" textAlignment="CENTER" textFill="#969e49">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#969e49" glyphName="CAR" selectionEnd="0" size="50" textAlignment="CENTER" wrappingWidth="56.06345868110657" />
+               </graphic>
+            </Button>
+            <Button fx:id="visitList_btn" contentDisplay="TOP" layoutX="240.0" layoutY="250.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="150.0" prefWidth="230.0" text="Visit List" textAlignment="CENTER" textFill="#969e49">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#969e49" glyphName="CALENDAR" selectionEnd="0" size="50" wrappingWidth="43.17462658882141" />
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="129.0" prefHeight="36.0" prefWidth="1000.0" text="WELCOME TO HOME RESIDENT SYSTEM">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="displaySGName" alignment="CENTER" layoutX="1.0" layoutY="168.0" prefHeight="25.0" prefWidth="1001.0" promptText="Hi, sgName" style="-fx-background-color: trnasparent;">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="displaySGID" alignment="TOP_CENTER" layoutX="2.0" layoutY="191.0" prefHeight="25.0" prefWidth="1001.0" promptText="(Security Guard ID: 1001)" style="-fx-background-color: trnasparent;">
+               <font>
+                  <Font name="Tahoma" size="10.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="visitListPage" layoutX="9.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <AnchorPane layoutX="-2.0" prefHeight="41.0" prefWidth="1003.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="vl_signout_btn" alignment="CENTER_RIGHT" layoutX="949.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" textAlignment="CENTER" AnchorPane.bottomAnchor="3.3333333333333357" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="30" wrappingWidth="29.85714340209961" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="vl_home_btn" layoutX="9.0" layoutY="3.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="3.0">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="30" text="" wrappingWidth="29.85714340209961" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="41.0" prefHeight="559.0" prefWidth="221.0" style="-fx-background-color: #969e49;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="41.0">
+               <children>
+                  <Button fx:id="vl_side_btn" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="btn-5" stylesheets="@style.css" text="Visit List" />
+                  <Button fx:id="pl_side_btn" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="btn-5" stylesheets="@style.css" text="Parking List" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="301.0" layoutY="104.0" prefHeight="25.0" prefWidth="116.0" text="Visit List" textFill="#969e49">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="visit_TableView" layoutX="299.0" layoutY="155.0" prefHeight="351.0" prefWidth="624.0">
+               <columns>
+                  <TableColumn fx:id="vlCol_visitid" prefWidth="72.0" text="Visit ID" />
+                  <TableColumn fx:id="vlCol_visitorid" prefWidth="80.66665649414062" text="Visitor ID" />
+                  <TableColumn fx:id="vlCol_residentid" prefWidth="81.11114501953125" text="Resident ID" />
+                  <TableColumn fx:id="vlCol_arrivaldate" prefWidth="132.22216796875" text="Arrival Date" />
+                  <TableColumn fx:id="vlCol_arrivaltime" prefWidth="111.77777099609375" text="Arrival Time" />
+                  <TableColumn fx:id="vlCol_purpose" prefWidth="144.0" text="Purpose" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="parkingListPage" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <AnchorPane layoutX="-2.0" prefHeight="41.0" prefWidth="1003.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="pl_signout_btn" alignment="CENTER_RIGHT" layoutX="949.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" textAlignment="CENTER" AnchorPane.bottomAnchor="3.3333333333333357" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="30" wrappingWidth="29.85714340209961" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="pl_home_btn" layoutX="9.0" layoutY="3.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="3.0">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="HOME" size="30" text="" wrappingWidth="29.85714340209961" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="41.0" prefHeight="559.0" prefWidth="221.0" style="-fx-background-color: #969e49;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="41.0">
+               <children>
+                  <Button fx:id="vl_side_btn1" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="btn-5" stylesheets="@style.css" text="Visit List" />
+                  <Button fx:id="pl_side_btn1" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="50.0" prefWidth="200.0" styleClass="btn-5" stylesheets="@style.css" text="Parking List" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="parking_TableView" layoutX="250.0" layoutY="145.0" prefHeight="351.0" prefWidth="726.0" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="145.0">
+               <columns>
+                  <TableColumn fx:id="plCol_parkingid" text="Parking ID" />
+                  <TableColumn fx:id="plCol_visitid" prefWidth="63.333343505859375" text="Visit ID" />
+                  <TableColumn fx:id="plCol_visitorid" prefWidth="71.111083984375" text="Visitor ID" />
+                  <TableColumn fx:id="plCol_carplate" prefWidth="73.55563354492188" text="Car Plate" />
+                  <TableColumn fx:id="plCol_stayduration" prefWidth="140.888916015625" text="Stay Duration" />
+                  <TableColumn fx:id="plCol_estimatecheckin" prefWidth="143.7777099609375" text="Estimate Check In" />
+                  <TableColumn fx:id="plCol_checkoutbefore" prefWidth="150.0" text="Check Out Before" />
+               </columns>
+            </TableView>
+            <Label layoutX="270.0" layoutY="103.0" prefHeight="25.0" prefWidth="130.0" text="Parking List" textFill="#969e49">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

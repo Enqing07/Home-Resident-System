@@ -1,0 +1,79 @@
+.radius {
+    -fx-background-radius: 10px;
+}
+
+.btn-1 {
+    -fx-background-color: linear-gradient(to bottom right, #205461, #03417f);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Tahoma;
+}
+
+.btn-1:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #344163;
+    -fx-border-style: solid;
+    -fx-border-color: #344163;
+    -fx-border-radius: 10px;
+}
+
+.btn-2 {
+    -fx-background-color: linear-gradient(to bottom right, #75ad85, #1b532b);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Tahoma;
+}
+
+.btn-2:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #75ad85;
+    -fx-border-style: solid;
+    -fx-border-color: #75ad85;
+    -fx-border-radius: 10px;
+}
+
+.btn-3 {
+    -fx-background-color: linear-gradient(to bottom right, #b9bf91, #67710f);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Tahoma;
+}
+
+.btn-3:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #969e49;
+    -fx-border-style: solid;
+    -fx-border-color: #969e49;
+    -fx-border-radius: 10px;
+}
+
+.btn-4 {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Tahoma;
+    -fx-border-color: white;
+}
+
+.btn-4:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #63a17b;
+}
+
+.btn-5 {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Tahoma;
+    -fx-border-color: white;
+}
+
+.btn-5:hover {
+    -fx-background-color: white;
+    -fx-text-fill: #969e49;
+}
