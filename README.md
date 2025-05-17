@@ -29,14 +29,20 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
 
 ### Installation 
 1. Run `git clone "Repository Link"`
-2. Add JAR dependencies to your project’s library:
-   - fontawesomefx.jar (Download from: [FontAwesomeFX](https://jar-download.com/artifacts/de.jensd/fontawesomefx/8.2/source-code))
-   - mysql-connector-java.jar (Download from: [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/))
-3. Add JARs to Reference Library in your project
-4. Set up MySQL database connection:
+2. Add the following `.jar` files to your project's Reference Library:
+   - fontawesomefx.jar
+     🔗 [Download FontAwesomeFX](https://jar-download.com/artifacts/de.jensd/fontawesomefx/8.2/source-code))
+   - mysql-connector-java.jar
+     🔗 [Download MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/))
+3. Set up MySQL database connection:
    - Make sure your MySQL server is running.
-   - Update `AdminPageController.java` with your own: database name, username and password
-5. Run `AdminPageController.java`</br>
+   - Update `AdminPageController.java` with your own:
+     - database name
+     - username
+     - password
+5. Run the Application 
+   Launch using `AdminPageController.java`</br></br>
+   **Login Credentials** (for Testing)</br>
    To login as Resident => ID: `1001` Pass: `may123`</br>
    To login as Admin => ID: `1001` Pass: `ava123`</br>
    To login as Security Guard => ID: `1001` Pass: `jack123`
