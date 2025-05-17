@@ -46,3 +46,8 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
    To login as Resident => ID: `1001` Pass: `may123`</br>
    To login as Admin => ID: `1001` Pass: `ava123`</br>
    To login as Security Guard => ID: `1001` Pass: `jack123`
+
+## Tools Used
+[![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#)
+![FXML](https://img.shields.io/badge/FXML-XML-blue?style=flat)
