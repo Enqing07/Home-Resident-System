@@ -41,7 +41,7 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
      - username
      - password
 5. Run the Application</br>
-   Launch using `AdminPageController.java`</br></br>
+   Launch using `Client.java`</br></br>
    **Login Credentials** (for Testing)</br>
    To login as Resident => ID: `1001` Pass: `may123`</br>
    To login as Admin => ID: `1001` Pass: `ava123`</br>
