@@ -30,8 +30,7 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
 ## Installation 
 1. Run `git clone "Repository Link"`
 2. Add the following `.jar` files to your project's Reference Library:
-   - fontawesomefx.jar
-     🔗 [Download FontAwesomeFX](https://jar-download.com/artifacts/de.jensd/fontawesomefx/8.2/source-code))
+   - [fontawesomefx-8.2.jar](fontawesomefx-8.2.jar)
    - mysql-connector-java.jar
      🔗 [Download MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/))
 3. Set up MySQL database connection:
