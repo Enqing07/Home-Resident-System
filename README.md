@@ -17,7 +17,9 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
 - Add a visitor by entering their name and contact number.
 - Remove a visitor from the list when not needed.
 - Schedule a visit by selecting the visitor, date, time, and purpose.
+![Resident Panel2](https://github.com/user-attachments/assets/0621efea-10a7-41ff-96bc-fc75731557ce)
 - Reserve parking by choosing a scheduled visitor, entering car plate number, and setting stay duration.
+<img src="https://github.com/user-attachments/assets/f6f1e19b-a423-4027-9509-622e45937122" alt="Resident Panel2" width="300"/>
 
 ### Admin Panel
 - View the list of registered residents.
