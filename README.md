@@ -12,7 +12,7 @@ This project is a JavaFX-based GUI application developed using Scene Builder (FX
   - Residents can reserve parking for the visitor.
   - Security guards use the parking list to verify visitor access and parking allocation.
 
-## User Panels & Responsibilities
+## User Panels & Key Features Overview
 ### Resident Panel 
 - Add a visitor by entering their name and contact number.
 - Remove a visitor from the list when not needed.
